@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6003F589195388D20070C39A"
-               BuildableName = "MWPhotoBrowser_Example.app"
-               BlueprintName = "MWPhotoBrowser_Example"
-               ReferencedContainer = "container:MWPhotoBrowser.xcodeproj">
+               BuildableName = "MWPhotoBrowser-AVKit_Example.app"
+               BlueprintName = "MWPhotoBrowser-AVKit_Example"
+               ReferencedContainer = "container:MWPhotoBrowser-AVKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,29 +27,27 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6003F589195388D20070C39A"
+            BuildableName = "MWPhotoBrowser-AVKit_Example.app"
+            BlueprintName = "MWPhotoBrowser-AVKit_Example"
+            ReferencedContainer = "container:MWPhotoBrowser-AVKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6003F5AD195388D20070C39A"
-               BuildableName = "MWPhotoBrowser_Tests.xctest"
-               BlueprintName = "MWPhotoBrowser_Tests"
-               ReferencedContainer = "container:MWPhotoBrowser.xcodeproj">
+               BuildableName = "MWPhotoBrowser-AVKit_Tests.xctest"
+               BlueprintName = "MWPhotoBrowser-AVKit_Tests"
+               ReferencedContainer = "container:MWPhotoBrowser-AVKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "MWPhotoBrowser_Example.app"
-            BlueprintName = "MWPhotoBrowser_Example"
-            ReferencedContainer = "container:MWPhotoBrowser.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -66,13 +64,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "MWPhotoBrowser_Example.app"
-            BlueprintName = "MWPhotoBrowser_Example"
-            ReferencedContainer = "container:MWPhotoBrowser.xcodeproj">
+            BuildableName = "MWPhotoBrowser-AVKit_Example.app"
+            BlueprintName = "MWPhotoBrowser-AVKit_Example"
+            ReferencedContainer = "container:MWPhotoBrowser-AVKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -85,9 +81,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "MWPhotoBrowser_Example.app"
-            BlueprintName = "MWPhotoBrowser_Example"
-            ReferencedContainer = "container:MWPhotoBrowser.xcodeproj">
+            BuildableName = "MWPhotoBrowser-AVKit_Example.app"
+            BlueprintName = "MWPhotoBrowser-AVKit_Example"
+            ReferencedContainer = "container:MWPhotoBrowser-AVKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

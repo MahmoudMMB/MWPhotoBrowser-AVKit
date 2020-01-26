@@ -1044,10 +1044,10 @@
             
             // Videos
             
-            photo = [MWPhoto photoWithURL:[[NSURL alloc] initWithString:@"https://scontent.cdninstagram.com/hphotos-xpt1/t51.2885-15/e15/11192696_824079697688618_1761661_n.jpg"]];
-            photo.videoURL = [[NSURL alloc] initWithString:@"https://scontent.cdninstagram.com/hphotos-xpa1/t50.2886-16/11200303_1440130956287424_1714699187_n.mp4"];
+            photo = [MWPhoto photoWithURL:[[NSURL alloc] initWithString:@"https://scontent-cdg2-1.cdninstagram.com/v/t51.2885-15/e35/c157.0.405.405a/82289542_216564056181950_5172158624670318935_n.jpg?_nc_ht=scontent-cdg2-1.cdninstagram.com&_nc_cat=102&_nc_ohc=J8hojUiTau0AX9iQ-R6&oh=5fe0af57f4884d0479536f9bbf1f2013&oe=5E30A042"]];
+            photo.videoURL = [[NSURL alloc] initWithString:@"https://scontent-cdg2-1.cdninstagram.com/v/t50.2886-16/83625774_203937063990179_802784096932990517_n.mp4?_nc_ht=scontent-cdg2-1.cdninstagram.com&_nc_cat=111&_nc_ohc=1wf7-EYHOQ8AX-Z0QrD&oe=5E2FD833&oh=f9d9c1bceaad7c09f1e55d0763c179b0"];
             [photos addObject:photo];
-            thumb = [MWPhoto photoWithURL:[[NSURL alloc] initWithString:@"https://scontent.cdninstagram.com/hphotos-xpt1/t51.2885-15/s150x150/e15/11192696_824079697688618_1761661_n.jpg"]];
+            thumb = [MWPhoto photoWithURL:[[NSURL alloc] initWithString:@"https://scontent-cdg2-1.cdninstagram.com/v/t51.2885-15/e35/c157.0.405.405a/82289542_216564056181950_5172158624670318935_n.jpg?_nc_ht=scontent-cdg2-1.cdninstagram.com&_nc_cat=102&_nc_ohc=J8hojUiTau0AX9iQ-R6&oh=5fe0af57f4884d0479536f9bbf1f2013&oe=5E30A042"]];
             thumb.isVideo = YES;
             [thumbs addObject:thumb];
             
