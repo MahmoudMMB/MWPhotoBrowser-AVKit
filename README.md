@@ -220,13 +220,13 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 Then import the photo browser into your source files (or into your bridging header if you're using with Swift and not using frameworks with Cocoapods):
 
 ```obj-c
-#import "MWPhotoBrowser.h"
+#import "MWPhotoBrowser_AVKit.h"
 ```
 
 If you are using Swift and frameworks, then you can just import the browser into your Swift source file:
 
 ```swift
-import MWPhotoBrowser
+import MWPhotoBrowser_AVKit
 ```
 
 
