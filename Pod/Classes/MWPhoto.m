@@ -8,6 +8,9 @@
 
 #import <SDWebImage/SDWebImageManager.h>
 #import <SDWebImage/SDWebImageOperation.h>
+#import "SDWebImageManager.h"
+#import <SDWebImage/SDWebImageOperation.h>
+#import <SDWebImage/SDWebImage.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "MWPhoto.h"
 #import "MWPhotoBrowser.h"
