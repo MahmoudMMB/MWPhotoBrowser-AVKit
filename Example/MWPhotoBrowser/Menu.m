@@ -21,7 +21,9 @@
 		self.title = @"MWPhotoBrowser";
         
         // Clear cache for testing
-        [[SDImageCache sharedImageCache] clearDisk];
+        [[SDImageCache sharedImageCache] clearDiskOnCompletion:^{
+            
+        }];
         [[SDImageCache sharedImageCache] clearMemory];
         
         _segmentedControl = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Push", @"Modal", nil]];
@@ -263,7 +265,7 @@
         }
 		case 5:
             // Photos
-			[photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3567/3523321514_371d9ac42f_b.jpg"]]];
+			[photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"https://images.unsplash.com/photo-1526666923127-b2970f64b422?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8ZXh0cmElMjBsYXJnZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"]]];
 			[photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3629/3339128908_7aecabc34b_b.jpg"]]];
 			[photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3364/3338617424_7ff836d55f_b.jpg"]]];
 			[photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3590/3329114220_5fbc5bc92b_b.jpg"]]];
@@ -278,10 +280,10 @@
 			break;
 		case 6:
             // Photos & thumbs
-            photo = [MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3779/9522424255_28a5a9d99c_b.jpg"]];
+            photo = [MWPhoto photoWithURL:[NSURL URLWithString:@"https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg"]];
             photo.caption = @"Tube";
             [photos addObject:photo];
-            [thumbs addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3779/9522424255_28a5a9d99c_q.jpg"]]];
+            [thumbs addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg"]]];
             photo = [MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3777/9522276829_fdea08ffe2_b.jpg"]];
             photo.caption = @"Flat White at Elliot's";
             [photos addObject:photo];

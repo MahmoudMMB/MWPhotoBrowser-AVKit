@@ -1,0 +1,6 @@
+framework module MWPhotoBrowser_AVKit {
+  umbrella header "MWPhotoBrowser-AVKit-framework-umbrella.h"
+
+  export *
+  module * { export * }
+}

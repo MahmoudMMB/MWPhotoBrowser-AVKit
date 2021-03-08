@@ -1,14 +1,19 @@
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'MWPhotoBrowser-AVKit_Example' do
+# Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+use_frameworks!
 source 'https://github.com/CocoaPods/Specs.git'
-
-target 'MWPhotoBrowser_Example', :exclusive => true do
-  pod "MWPhotoBrowser", :path => "../"
+# Pods for FoodTracker
+pod "MWPhotoBrowser-AVKit", :path => "../"
 end
+target ‘MWPhotoBrowser-AVKit_Tests’ do
+pod "MWPhotoBrowser-AVKit", :path => "../"
 
-target 'MWPhotoBrowser_Tests', :exclusive => true do
-  pod "MWPhotoBrowser", :path => "../"
-
-  pod 'Specta'
-  pod 'Expecta'
-  pod 'FBSnapshotTestCase'
-  pod 'Expecta+Snapshots'
+pod 'Specta'
+pod 'Expecta'
+pod 'FBSnapshotTestCase'
+pod 'Expecta+Snapshots'
 end
