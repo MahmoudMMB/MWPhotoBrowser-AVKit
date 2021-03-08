@@ -27,8 +27,8 @@ Pod::Spec.new do |s|
     :git => 'https://github.com/MahmoudMMB/MWPhotoBrowser-AVKit.git',
     :tag => '2.1.2'
   }
-  s.platform = :ios, '7.0'
-  s.source_files = 'Pod/Classes/**/*'
+  s.platform = :ios, '10.0'
+  s.source_files = 'Pod/Classes/**/*.{h,m,swift}'
   s.resource_bundles = {
     'MWPhotoBrowser' => ['Pod/Assets/*.png']
   }
