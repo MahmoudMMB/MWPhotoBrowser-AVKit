@@ -44,9 +44,6 @@
     ],
     "DACircularProgress": [
       "~> 2.3"
-    ],
-    "SDWebImage": [
-      "~> 5"
     ]
   }
 }

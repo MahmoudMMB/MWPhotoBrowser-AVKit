@@ -6,11 +6,11 @@
 //  Copyright 2010 d3i. All rights reserved.
 //
 
-#import <SDWebImage/SDWebImageManager.h>
-#import <SDWebImage/SDWebImageOperation.h>
-#import "SDWebImageManager.h"
-#import <SDWebImage/SDWebImageOperation.h>
-#import <SDWebImage/SDWebImage.h>
+#import <MWWebImageManager.h>
+#import <MWWebImageOperation.h>
+#import "MWWebImageManager.h"
+#import <MWWebImageOperation.h>
+#import <MWWebImage.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "MWPhoto.h"
 #import "MWPhotoBrowser.h"
@@ -18,7 +18,7 @@
 @interface MWPhoto () {
 
     BOOL _loadingInProgress;
-    id <SDWebImageOperation> _webImageOperation;
+    id <MWWebImageOperation> _webImageOperation;
     PHImageRequestID _assetRequestID;
     PHImageRequestID _assetVideoRequestID;
         
@@ -213,8 +213,8 @@
 // Load from local file
 - (void)_performLoadUnderlyingImageAndNotifyWithWebURL:(NSURL *)url {
     @try {
-        _webImageOperation =  [[SDWebImageManager sharedManager] loadImageWithURL:url
-                                                    options:SDWebImageRefreshCached
+        _webImageOperation =  [[MWWebImageManager sharedManager] loadImageWithURL:url
+                                                    options:MWWebImageRefreshCached
                                                    progress: ^(NSInteger receivedSize, NSInteger expectedSize, NSURL * url) {
             if (expectedSize > 0) {
                 float progress = receivedSize / (float)expectedSize;
@@ -224,7 +224,7 @@
                 [[NSNotificationCenter defaultCenter] postNotificationName:MWPHOTO_PROGRESS_NOTIFICATION object:dict];
             }
         }
-                                                  completed:^(UIImage *image, NSData *data, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+                                                                        completed:^(UIImage *image, NSData *data, NSError *error, MWImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
             if (error) {
                 MWLog(@"SDWebImage failed to download image: %@", error);
             }

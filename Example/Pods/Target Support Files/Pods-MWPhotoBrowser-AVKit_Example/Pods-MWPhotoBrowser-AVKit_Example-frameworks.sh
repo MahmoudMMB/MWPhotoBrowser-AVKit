@@ -178,13 +178,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/DACircularProgress-framework/DACircularProgress.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD-framework/MBProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MWPhotoBrowser-AVKit-framework/MWPhotoBrowser_AVKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage-framework/SDWebImage.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/DACircularProgress-framework/DACircularProgress.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD-framework/MBProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MWPhotoBrowser-AVKit-framework/MWPhotoBrowser_AVKit.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage-framework/SDWebImage.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

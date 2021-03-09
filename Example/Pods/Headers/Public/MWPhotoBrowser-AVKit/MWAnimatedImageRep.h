@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/MWWebImage/MWWebImage/MWAnimatedImageRep.h

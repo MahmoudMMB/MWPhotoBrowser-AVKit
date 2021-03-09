@@ -1,6 +1,6 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/MWPhotoBrowser-AVKit-framework
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DACircularProgress-framework" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD-framework" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage-framework"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DACircularProgress-framework" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD-framework"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public"
 OTHER_LDFLAGS = $(inherited) -framework "AssetsLibrary" -framework "ImageIO" -framework "MediaPlayer" -framework "QuartzCore" -weak_framework "Photos"

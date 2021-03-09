@@ -10,7 +10,7 @@
 #import "MWCommon.h"
 #import "MWPhotoBrowser.h"
 #import "MWPhotoBrowserPrivate.h"
-#import "SDImageCache.h"
+#import "MWImageCache.h"
 #import "UIImage+MWPhotoBrowser.h"
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
@@ -98,7 +98,7 @@ static void * MWVideoPlayerObservation = &MWVideoPlayerObservation;
     _pagingScrollView.delegate = nil;
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     [self releaseAllUnderlyingPhotos:NO];
-    [[SDImageCache sharedImageCache] clearMemory]; // clear memory
+    [[MWImageCache sharedImageCache] clearMemory]; // clear memory
 }
 
 - (void)releaseAllUnderlyingPhotos:(BOOL)preserveCurrent {
