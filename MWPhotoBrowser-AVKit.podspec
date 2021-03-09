@@ -29,6 +29,7 @@ Pod::Spec.new do |s|
   }
   s.platform     = :ios, '9.0'
   s.source_files = 'Pod/Classes/**/*.{h,m,swift}'
+  s.exclude_files = "Pods/Target Support Files/MWPhotoBrowser-AVKit/*.plist"
   s.resource_bundles = {
     'MWPhotoBrowser' => ['Pod/Assets/*.{h,m,swift,png}']
   }
