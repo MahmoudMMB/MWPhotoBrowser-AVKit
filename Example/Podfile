@@ -9,15 +9,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 # Pods for FoodTracker
 pod "MWPhotoBrowser-AVKit", :path => "../"
 end
-target ‘MWPhotoBrowser-AVKit_Tests’ do
-pod "MWPhotoBrowser-AVKit", :path => "../"
 
-pod 'Specta'
-pod 'Expecta'
-pod 'FBSnapshotTestCase'
-pod 'Expecta+Snapshots'
-
-end
 
 post_install do |installer|
 
