@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
   s.source = {
     :git => 'https://github.com/MahmoudMMB/MWPhotoBrowser-AVKit.git',
-    :tag => '2.1.2'
+    :tag => '2.1.6'
   }
   s.platform     = :ios, '9.0'
   s.source_files = 'Pod/Classes/**/*.{h,m,swift}'
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'ImageIO', 'QuartzCore', 'AssetsLibrary', 'MediaPlayer'
   s.weak_frameworks = 'Photos'
 
-  s.dependency 'MBProgressHUD', '~> 0.9'
+  s.dependency 'MBProgressHUD', '~> 1.2.0'
   s.dependency 'DACircularProgress', '~> 2.3'
 
   # SDWebImage
